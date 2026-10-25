@@ -1,0 +1,15 @@
+class Solution {
+    public List<Integer> findWordsContaining(String[] words, char x) {
+        List<Integer> arr = new ArrayList<>();
+        for(int i=0; i<words.length; i++){
+            if(words[i].indexOf(x) != -1){
+                arr.add(i);
+            }
+        }
+        return arr;
+    }
+}
+
+// Synced seamlessly with LeetHub Pro
+// Pro features: https://bit.ly/leethubpro | Free version: https://bit.ly/leethubv4
+// Get it here: https://chromewebstore.google.com/detail/bcilpkkbokcopmabingnndookdogmbna
